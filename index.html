@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>큐GO 받기 · CueGO Download</title>
+<meta name="description" content="큐GO — 공연 음악을 큐 순서대로, GO 하나로. 맥 · 윈도우 받기">
+<style>
+  :root { --bg:#0b0f0d; --card:#141a17; --line:#24302a; --ink:#f3f5f4; --dim:#9aa59f; --go:#2bff88; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background: radial-gradient(1200px 600px at 50% -10%, #12402a 0%, var(--bg) 60%); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif;
+         display:flex; align-items:center; justify-content:center; padding:24px 16px; }
+  main { width:100%; max-width:520px; text-align:center; }
+  .logo { width:72px; height:72px; border-radius:20px; background:var(--go); display:inline-flex; align-items:center; justify-content:center;
+          font-weight:900; font-size:34px; color:#07140d; margin-bottom:18px; }
+  h1 { font-size:34px; margin:0 0 8px; letter-spacing:-1px; }
+  p.lead { color:var(--dim); margin:0 0 28px; line-height:1.5; }
+  .main-btn { display:block; background:#f4f6f5; color:#07140d; text-decoration:none; font-weight:800; font-size:19px;
+              padding:18px 20px; border-radius:999px; margin-bottom:10px; }
+  .sub { color:var(--dim); font-size:13px; margin-bottom:26px; }
+  .other { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; }
+  .other a { color:var(--go); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:10px 16px; font-weight:700; font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:18px 20px; text-align:left; font-size:14px; line-height:1.6; color:var(--dim); }
+  .card b { color:var(--ink); }
+  footer { color:#5d6862; font-size:12px; margin-top:22px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">Q</div>
+  <h1 id="title">큐GO 받기</h1>
+  <p class="lead" id="lead">공연 음악을 큐 순서대로, GO 하나로.</p>
+
+  <a class="main-btn" id="main" href="#">받기</a>
+  <div class="sub" id="sub"></div>
+
+  <div class="other" id="other"></div>
+
+  <div class="card" id="how"></div>
+  <footer>help@seoriarts.com · © SeoriArts</footer>
+</main>
+<script>
+  // 들어온 기기에 맞는 받기를 크게, 나머지는 작게 (한 페이지 · 링크 하나)
+  const base = 'https://github.com/hanseolhui/cuego-download/releases/latest/download/';
+  const ua = navigator.userAgent, plat = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+  const ko = (navigator.language || 'ko').toLowerCase().startsWith('ko');
+  const t = (k, e) => ko ? k : e;
+  const isIOS = /iPhone|iPad|iPod/.test(ua) || (/Mac/.test(plat) && navigator.maxTouchPoints > 1);
+  const isAndroid = /Android/.test(ua);
+  const isWin = /Win/.test(plat) || /Windows/.test(ua);
+  const isMac = !isIOS && /Mac/.test(plat + ua);
+  const L = {
+    mac: { label: t('맥용 받기', 'Download for Mac'), href: base + 'CueGO-mac.zip', sub: t('macOS 12 이상 · 애플 공증', 'macOS 12+ · Notarized by Apple') },
+    win: { label: t('윈도우용 받기', 'Download for Windows'), href: base + 'CueGO-windows.zip', sub: t('윈도우 10 · 11 (64비트)', 'Windows 10 / 11 (64-bit)') },
+    ios: { label: t('앱스토어에서 받기', 'Get it on the App Store'), href: 'https://apps.apple.com/app/id6815447098', sub: t('아이폰 · 아이패드', 'iPhone · iPad') },
+    and: { label: t('구글 플레이에서 받기', 'Get it on Google Play'), href: 'https://play.google.com/store/apps/details?id=com.seoriarts.cuego', sub: t('안드로이드 폰 · 태블릿', 'Android phone · tablet') },
+  };
+  const first = isIOS ? 'ios' : isAndroid ? 'and' : isWin ? 'win' : 'mac';
+  document.title = t('큐GO 받기', 'Download CueGO');
+  document.getElementById('title').textContent = t('큐GO 받기', 'Download CueGO');
+  document.getElementById('lead').textContent = t('공연 음악을 큐 순서대로, GO 하나로.', 'Your show music, cue by cue — one GO.');
+  const main = document.getElementById('main');
+  main.textContent = L[first].label; main.href = L[first].href;
+  document.getElementById('sub').textContent = L[first].sub;
+  document.getElementById('other').innerHTML = ['mac', 'win', 'ios', 'and'].filter(k => k !== first)
+    .map(k => `<a href="${L[k].href}">${L[k].label}</a>`).join('');
+  const how = {
+    mac: t('<b>맥</b> — zip 을 풀고 <b>cuego.app</b> 을 «응용 프로그램» 폴더로 옮긴 뒤 엽니다.',
+           '<b>Mac</b> — Unzip and move <b>cuego.app</b> to Applications, then open it.'),
+    win: t('<b>윈도우</b> — zip 을 풀고 폴더 안의 <b>cuego.exe</b> 를 엽니다(폴더째 두세요). «PC 보호»가 뜨면 「추가 정보 → 실행」.',
+           '<b>Windows</b> — Unzip and open <b>cuego.exe</b> inside the folder (keep the folder). If SmartScreen appears: More info → Run anyway.'),
+    ios: t('<b>아이폰 · 아이패드</b> — 앱스토어에서 «큐GO»를 받으세요.', '<b>iPhone · iPad</b> — Get “CueGO” on the App Store.'),
+    and: t('<b>안드로이드</b> — 플레이스토어에서 «큐GO»를 받으세요.', '<b>Android</b> — Get “CueGO” on Google Play.'),
+  };
+  document.getElementById('how').innerHTML = how[first] + '<br><br>' +
+    t('설치 후 14일 전부 무료 · 그 뒤 공연 1개 무료. 평생 이용권 코드는 설정 → 이용권에 넣으세요(기기 3대).',
+      '14-day free trial, then 1 show free. Enter your Lifetime Pass code in Settings → Pass (3 devices).');
+</script>
+</body>
+</html>
