@@ -6,7 +6,7 @@
 
 | | 받기 |
 |---|---|
-| 🍎 맥 (macOS 11 이상, 애플 공증) | [CueGO-mac.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.zip) |
+| 🍎 맥 (macOS 12 이상, 애플 공증) | [CueGO-mac.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.zip) |
 | 🪟 윈도우 10·11 (64비트) | [CueGO-windows.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 아이폰 · 아이패드 · 안드로이드는 앱스토어 · 플레이스토어에서 받으세요.
@@ -32,7 +32,7 @@
 
 | | Download |
 |---|---|
-| 🍎 Mac (macOS 11+, notarized) | [CueGO-mac.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.zip) |
+| 🍎 Mac (macOS 12+, notarized) | [CueGO-mac.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.zip) |
 | 🪟 Windows 10/11 (64-bit) | [CueGO-windows.zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 iPhone, iPad and Android: get CueGO from the App Store / Google Play.
