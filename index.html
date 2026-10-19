@@ -51,8 +51,8 @@
   const isWin = /Win/.test(plat) || /Windows/.test(ua);
   const isMac = !isIOS && /Mac/.test(plat + ua);
   const L = {
-    mac: { label: t('맥용 받기', 'Download for Mac'), href: base + 'CueGO-mac.zip', sub: t('macOS 12 이상 · 애플 공증', 'macOS 12+ · Notarized by Apple') },
-    win: { label: t('윈도우용 받기', 'Download for Windows'), href: base + 'CueGO-windows.zip', sub: t('윈도우 10 · 11 (64비트)', 'Windows 10 / 11 (64-bit)') },
+    mac: { label: t('맥용 받기', 'Download for Mac'), href: base + 'CueGO-mac.dmg', sub: t('macOS 12 이상 · 애플 공증', 'macOS 12+ · Notarized by Apple') },
+    win: { label: t('윈도우용 받기', 'Download for Windows'), href: base + 'CueGO-windows-setup.exe', sub: t('윈도우 10 · 11 (64비트)', 'Windows 10 / 11 (64-bit)') },
     ios: { label: t('앱스토어에서 받기', 'Get it on the App Store'), href: 'https://apps.apple.com/app/id6815447098', sub: t('아이폰 · 아이패드', 'iPhone · iPad') },
     and: { label: t('구글 플레이에서 받기', 'Get it on Google Play'), href: 'https://play.google.com/store/apps/details?id=com.seoriarts.cuego', sub: t('안드로이드 폰 · 태블릿', 'Android phone · tablet') },
   };
@@ -66,10 +66,10 @@
   document.getElementById('other').innerHTML = ['mac', 'win', 'ios', 'and'].filter(k => k !== first)
     .map(k => `<a href="${L[k].href}">${L[k].label}</a>`).join('');
   const how = {
-    mac: t('<b>맥</b> — zip 을 풀고 <b>cuego.app</b> 을 «응용 프로그램» 폴더로 옮긴 뒤 엽니다.',
-           '<b>Mac</b> — Unzip and move <b>cuego.app</b> to Applications, then open it.'),
-    win: t('<b>윈도우</b> — zip 을 풀고 폴더 안의 <b>cuego.exe</b> 를 엽니다(폴더째 두세요). «PC 보호»가 뜨면 「추가 정보 → 실행」.',
-           '<b>Windows</b> — Unzip and open <b>cuego.exe</b> inside the folder (keep the folder). If SmartScreen appears: More info → Run anyway.'),
+    mac: t('<b>맥</b> — 받은 <b>CueGO.dmg</b> 를 열고, <b>CueGO</b> 를 옆의 «응용 프로그램» 폴더로 끌어 놓으면 설치 끝.',
+           '<b>Mac</b> — Open <b>CueGO.dmg</b> and drag <b>CueGO</b> onto the Applications folder next to it. Done.'),
+    win: t('<b>윈도우</b> — 받은 <b>설치 파일</b>을 열고 「다음」만 누르면 시작 메뉴·바탕화면에 큐GO 가 생깁니다. «PC 보호»가 뜨면 「추가 정보 → 실행」.',
+           '<b>Windows</b> — Run the <b>installer</b> and click Next; CueGO appears in the Start menu and on your desktop. If SmartScreen appears: More info → Run anyway.'),
     ios: t('<b>아이폰 · 아이패드</b> — 앱스토어에서 «큐GO»를 받으세요.', '<b>iPhone · iPad</b> — Get “CueGO” on the App Store.'),
     and: t('<b>안드로이드</b> — 플레이스토어에서 «큐GO»를 받으세요.', '<b>Android</b> — Get “CueGO” on Google Play.'),
   };
