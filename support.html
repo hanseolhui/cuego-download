@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>큐GO 고객 지원 · CueGO Support</title>
+<meta name="description" content="큐GO(CueGO) 고객 지원 · 자주 묻는 질문">
+<!-- 🔴 문의 주소는 .who 줄에만 있다 — 스토어 주소를 이 페이지로 바꾸기 «전에» 대표 확인. -->
+<style>
+  :root { --bg:#0b0f0d; --card:#141a17; --line:#24302a; --ink:#f3f5f4; --dim:#9aa59f; --go:#2bff88; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.7;
+         font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif; padding:28px 16px 48px; }
+  main { max-width:760px; margin:0 auto; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .logo { width:40px; height:40px; border-radius:12px; background:var(--go); display:inline-flex; align-items:center; justify-content:center;
+          font-weight:900; font-size:20px; color:#07140d; text-decoration:none; flex:none; }
+  .langs { margin-left:auto; display:flex; gap:6px; }
+  .langs button { background:none; border:1px solid var(--line); color:var(--dim); border-radius:999px; padding:4px 12px; font-weight:700; cursor:pointer; }
+  .langs button.on { color:var(--go); border-color:var(--go); }
+  h1 { font-size:28px; margin:18px 0 4px; letter-spacing:-.5px; }
+  h2 { font-size:19px; margin:30px 0 8px; }
+  p, li { color:#d6dcd8; }
+  .meta { color:var(--dim); font-size:14px; }
+  .lead { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px 18px; margin:18px 0; }
+  .lead b { color:var(--go); }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0; }
+  th, td { border:1px solid var(--line); padding:9px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--card); color:var(--ink); }
+  td { color:#d6dcd8; }
+  .scroll { overflow-x:auto; }
+  a { color:var(--go); }
+  .mail { display:inline-block; background:#f4f6f5; color:#07140d; font-weight:800; text-decoration:none; border-radius:999px; padding:12px 20px; margin:6px 0 4px; }
+  h3 { font-size:16px; margin:22px 0 4px; color:var(--ink); }
+  footer { color:#5d6862; font-size:12px; margin-top:36px; }
+  html.ko [data-l="en"], html.en [data-l="ko"] { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="logo" href="./">Q</a>
+    <div class="langs"><button id="b-ko" onclick="setLang('ko')">한국어</button><button id="b-en" onclick="setLang('en')">English</button></div>
+  </header>
+
+  <!-- ─────────────── 한국어 ─────────────── -->
+  <section data-l="ko">
+    <h1>큐GO 고객 지원</h1>
+    <div class="lead who">
+      궁금한 점이나 문제가 있으면 메일로 알려 주세요.<br>
+      <a class="mail" href="mailto:help@seoriarts.com?subject=%ED%81%90GO%20%EB%AC%B8%EC%9D%98">help@seoriarts.com</a><br>
+      <span class="meta">쓰시는 기기(아이폰·맥·윈도우 등)와 앱 버전을 같이 적어 주시면 더 빨리 도와드릴 수 있어요.</span>
+    </div>
+    <p><a href="./">큐GO 받기</a> · <a href="privacy.html">개인정보처리방침</a></p>
+
+    <h2>이용권</h2>
+    <h3>아이폰·안드로이드에서 산 이용권을 맥·윈도우에서도 쓸 수 있나요?</h3>
+    <p>네. 폰의 이용권 화면에 «다른 기기용 코드»가 보입니다. 맥·윈도우의 큐GO에서 그 코드를 넣으면 열립니다. 코드 하나로 기기 3대까지 쓸 수 있습니다.</p>
+    <h3>코드를 잃어버렸어요</h3>
+    <p>이용권 화면에서 «이메일로 찾기»를 누르고, 구매할 때 쓴 이메일로 받은 인증번호를 넣으면 다시 열립니다. 찾지 못하면 메일로 알려 주세요.</p>
+    <h3>기기를 바꿨어요</h3>
+    <p>쓰던 기기의 이용권 화면에서 «이 기기 해제»를 누른 뒤, 새 기기에 같은 코드를 넣으세요. 쓰던 기기를 쓸 수 없게 됐다면 메일로 알려 주세요.</p>
+    <h3>인터넷이 없는 공연장에서도 되나요?</h3>
+    <p>네. 공연을 만들고 트는 데는 인터넷이 필요 없습니다. 맥·윈도우에 등록한 이용권은 인터넷 없이 30일 동안 그대로 쓸 수 있고, 그 사이 한 번 인터넷에 연결되면 다시 30일이 이어집니다.</p>
+    <h3>환불</h3>
+    <p>App Store나 Google Play에서 구매하셨다면 환불은 Apple·Google의 환불 절차를 따릅니다. 그 밖의 경우는 메일로 알려 주세요.</p>
+
+    <h2>리모컨 · 감독 화면</h2>
+    <h3>폰 리모컨이 무대 기기를 못 찾아요</h3>
+    <ul>
+      <li>두 기기가 <b>같은 Wi-Fi</b>인지 확인하세요. 공연장 Wi-Fi가 기기끼리 연결을 막는 곳도 있습니다. 그럴 땐 폰의 핫스팟에 무대 기기를 붙이세요.</li>
+      <li>처음 켤 때 묻는 «로컬 네트워크» 허용을 거절했다면, 기기 설정에서 큐GO의 로컬 네트워크를 켜 주세요.</li>
+      <li>무대 기기와 거리가 멀거나 Wi-Fi가 다르면, 무대 기기 설정의 «인터넷으로도 받기»를 켜고 인터넷 코드로 연결하세요.</li>
+    </ul>
+    <h3>감독님께 큐시트를 보여 주고 싶어요</h3>
+    <p>무대 기기 설정의 «감독 링크»에서 «복사»를 눌러 메시지로 보내세요. 받은 분은 앱 없이 브라우저로 지금 곡·신호 카운트다운·큐시트를 봅니다. 감독 링크로는 GO를 누를 수 없고, «링크 새로 만들기»를 누르면 예전 링크는 끊깁니다.</p>
+  </section>
+
+  <!-- ─────────────── English ─────────────── -->
+  <section data-l="en">
+    <h1>CueGO Support</h1>
+    <div class="lead who">
+      Questions or problems? Email us.<br>
+      <a class="mail" href="mailto:help@seoriarts.com?subject=CueGO%20support">help@seoriarts.com</a><br>
+      <span class="meta">Tell us your device (iPhone, Mac, Windows…) and app version so we can help faster.</span>
+    </div>
+    <p><a href="./">Download CueGO</a> · <a href="privacy.html">Privacy Policy</a></p>
+
+    <h2>Pass</h2>
+    <h3>Can I use a Pass bought on iPhone or Android on my Mac or PC?</h3>
+    <p>Yes. The Pass screen on your phone shows a code for other devices. Enter it in CueGO on your Mac or Windows PC. One code works on up to 3 devices.</p>
+    <h3>I lost my code</h3>
+    <p>On the Pass screen, choose "Find by email" and enter the verification code sent to the email you bought with. If that doesn't work, email us.</p>
+    <h3>I changed devices</h3>
+    <p>Choose "Deactivate this device" on the Pass screen of the old device, then enter the same code on the new one. If you can't use the old device anymore, email us.</p>
+    <h3>Does it work without internet at the venue?</h3>
+    <p>Yes. Building and running a show needs no internet. A Pass registered on Mac or Windows keeps working offline for 30 days, and each time it goes online the 30 days start again.</p>
+    <h3>Refunds</h3>
+    <p>Purchases from the App Store or Google Play are refunded through Apple's or Google's process. For anything else, email us.</p>
+
+    <h2>Remote and crew screen</h2>
+    <h3>My phone remote can't find the stage device</h3>
+    <ul>
+      <li>Make sure both are on the <b>same Wi-Fi</b>. Some venue networks block devices from seeing each other — join the stage device to your phone's hotspot instead.</li>
+      <li>If you declined "Local Network" access, turn it on for CueGO in your device settings.</li>
+      <li>If the devices are far apart or on different networks, turn on "Also over the internet" on the stage device and connect with the internet code.</li>
+    </ul>
+    <h3>I want to show the cue sheet to the crew</h3>
+    <p>On the stage device, open Settings → "Crew link" and tap "Copy", then send it in a message. They open it in any browser to see the current track, cue countdowns and the cue sheet. The crew link can't press GO, and "New link" stops the old one.</p>
+  </section>
+
+  <footer>큐GO · CueGO</footer>
+</main>
+<script>
+  function setLang(l) {
+    document.documentElement.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('b-ko').className = l === 'ko' ? 'on' : '';
+    document.getElementById('b-en').className = l === 'en' ? 'on' : '';
+    try { localStorage.setItem('cuego-lang', l); } catch (e) {}
+  }
+  var saved = null; try { saved = localStorage.getItem('cuego-lang'); } catch (e) {}
+  var q = new URLSearchParams(location.search).get('lang');
+  setLang(q === 'en' || q === 'ko' ? q : saved || ((navigator.language || 'ko').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en'));
+</script>
+</body>
+</html>
