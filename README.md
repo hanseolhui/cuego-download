@@ -21,8 +21,8 @@
 
 ## 이용권
 
-설치 후 14일은 전부 무료. 그 뒤로는 공연 1개까지 무료입니다.
-평생 이용권 코드(`CUE-…`)는 설정 → 이용권에 넣으세요 (기기 3대까지).
+1.1.3부터 직접 시작하는 7일 전체 기능 무료 체험입니다. 이후 새 공연 시작은 평생 이용권이 필요합니다. 곡·설정·멘트는 보존하며 편집·내보내기할 수 있습니다. 기존 무료 사용자는 업데이트 시 14일 전환 유예를 받습니다.
+평생 이용권 코드(`CUE-…`)는 설정 → 이용권에 넣으세요 (기기 5대까지).
 
 문의: help@seoriarts.com · © SeoriArts
 
@@ -36,4 +36,7 @@
 | 🪟 Windows 10/11 (64-bit) | [Installer](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 iPhone, iPad and Android: get CueGO from the App Store / Google Play.
-14-day free trial, then 1 show free. Enter your Lifetime Pass code (`CUE-…`) in Settings → Pass.
+From 1.1.3, activate a 7-day full-feature trial with no automatic charge. A Lifetime Pass is required to start a new performance after the trial. Shows, tracks and editing remain available. Existing free users receive a 14-day transition period when updating. Enter your Lifetime Pass code (`CUE-…`) in Settings → Pass. Up to 5 registered devices; Apple Watch uses the paired iPhone’s slot.
+
+등록 기기 관리: https://apps.seoriarts.com/cuego-devices
+Android 직접 설치: https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-android.apk
