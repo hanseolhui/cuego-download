@@ -49,7 +49,7 @@
 
     <div class="lead">
       공연 편집과 재생에는 <b>로그인이 필요 없습니다.</b> 이름·전화번호·위치·연락처·사진·광고 식별자를 수집하지 않습니다.
-      음원과 공연 구성은 기본적으로 기기에 저장됩니다. <b>선택 기능인 내 공연 보관함(1.1.4부터)</b>에 이메일로 로그인한 뒤 직접 저장을 누르면 선택한 공연과 그 음악만 비공개 서버에 저장합니다.
+      음원과 공연 구성은 기기에 저장됩니다. <b>개인 저장소(1.1.4부터)</b>에서 iCloud Drive·Google Drive 등 본인이 고른 저장소에 공연 파일을 저장하거나 불러올 수 있습니다. 이 경로는 큐GO 음악 보관 서버를 사용하지 않습니다.
     </div>
 
     <h2>1. 인터넷에 연결하는 경우</h2>
@@ -59,10 +59,10 @@
       <tr><td>이용권 등록·확인<br>(맥·윈도우)</td><td>이용권 코드, 앱이 만든 기기 번호(임의의 값), 기기 이름</td><td>이용권 확인, 등록 기기 수 관리, 기기 해제</td><td>이용권이 유효한 동안</td></tr>
       <tr><td>앱 마켓 구매 확인<br>(아이폰·아이패드·안드로이드)</td><td>App Store·Google Play가 발급한 구매 영수증</td><td>구매 확인 후 다른 기기에서 쓸 이용권 코드 발급</td><td>이용권이 유효한 동안</td></tr>
       <tr><td>이메일로 이용권 찾기<br>(직접 요청할 때만)</td><td>이메일 주소, 기기 번호</td><td>그 이메일로 구매한 이용권을 찾고 인증번호를 메일로 보냄</td><td>찾기에만 쓰며 따로 모으지 않음</td></tr>
-      <tr><td>내 공연 보관함<br>(이메일 로그인·직접 저장할 때만)</td><td>이메일 주소, 선택한 공연 구성·메모·감독 신호·음악 파일</td><td>이메일 인증 및 같은 계정의 다른 기기로 저장·받기</td><td>앱의 보관함 계정 삭제로 서버 자료를 삭제합니다. 진행 중이던 전송의 잔여 파일은 최대 1시간 안에 정리합니다. 이전 로그인 차단용 이메일 해시와 삭제 시각만 보관합니다. 로그아웃만 하면 서버 자료는 남습니다.</td></tr>
+      <tr><td>기존 큐GO 보관함<br>(이전에 연결한 계정의 자료 받기·삭제)</td><td>이메일 주소, 선택한 공연 구성·메모·감독 신호·음악 파일</td><td>이메일 인증 및 같은 계정의 다른 기기로 저장·받기</td><td>앱의 보관함 계정 삭제로 서버 자료를 삭제합니다. 진행 중이던 전송의 잔여 파일은 최대 1시간 안에 정리합니다. 이전 로그인 차단용 이메일 해시와 삭제 시각만 보관합니다. 로그아웃만 하면 서버 자료는 남습니다.</td></tr>
       <tr><td>리모컨·감독 화면<br>(인터넷으로 잇기를 켤 때만)</td><td>리모컨 명령(GO 등), 공연·곡 이름, 큐 메모, 감독 신호, 재생 위치</td><td>떨어진 기기끼리 전달</td><td>중계 서버를 지나갈 뿐 저장하지 않음</td></tr>
     </table></div>
-    <p>보관함은 Cloudflare R2(APAC 위치 힌트)의 비공개 저장소를 사용하며, 서버용 이메일 인증에는 Vercel과 메일 발송 서비스를 사용합니다. 음악을 모두 내려받은 후에는 인터넷 없이 기기 안의 파일을 재생합니다.
+    <p>개인 저장소 파일은 사용자가 선택한 Apple·Google 등 저장소 제공업체가 처리하며, 해당 업체의 개인정보처리방침과 계정 용량·요금이 적용됩니다. 큐GO는 그 계정의 비밀번호를 받지 않습니다. 앱으로 불러온 공연과 음악은 기기에 복사해 인터넷 없이 재생합니다. 기존 큐GO 보관함의 이전 자료는 Cloudflare R2 비공개 저장소에 있으며, 앱에서 자료 받기와 계정 삭제가 가능합니다. 새 공연 저장은 개인 저장소를 사용합니다.
     </p><p>같은 Wi-Fi 안의 리모컨 연결과 애플워치 연결은 서버를 거치지 않고 기기끼리 직접 이어집니다.</p>
     <p>카드 번호 등 결제 정보는 받지 않습니다. 앱 마켓에서 구매한 경우 결제는 Apple·Google이 처리합니다.</p>
 
@@ -102,7 +102,7 @@
 
     <div class="lead">
       <b>No login is needed to edit or play shows.</b> We don't collect your name, phone number, location, contacts, photos or advertising ID.
-      Music and shows stay on your device by default. With the <b>optional My show cloud feature (from 1.1.4)</b>, signing in by email and choosing Save uploads the selected show and its music to private server storage.
+      Music and shows stay on your device. With <b>personal storage (from 1.1.4)</b>, you can save and open show files using a provider you choose, such as iCloud Drive or Google Drive. This route does not use CueGO music storage servers.
     </div>
 
     <h2>1. When the app goes online</h2>
@@ -112,10 +112,10 @@
       <tr><td>Registering or checking a Pass<br>(Mac · Windows)</td><td>Pass code, a random device ID made by the app, device name</td><td>Check the Pass, manage registered devices, remove a device</td><td>While the Pass is valid</td></tr>
       <tr><td>Confirming an app-store purchase<br>(iPhone · iPad · Android)</td><td>The purchase receipt issued by the App Store or Google Play</td><td>Confirm the purchase and issue a Pass code for your other devices</td><td>While the Pass is valid</td></tr>
       <tr><td>Finding your Pass by email<br>(only when you ask)</td><td>Email address, device ID</td><td>Find Passes bought with that email and email you a verification code</td><td>Used for the lookup only</td></tr>
-      <tr><td>My show cloud<br>(only when you sign in and choose Save)</td><td>Email address, selected show configuration, notes, crew cues and music files</td><td>Email verification and private transfer between devices using the same email</td><td>Delete your cloud account in the app to remove server copies. Remnants of in-flight transfers are cleaned up within one hour. Only a hashed email identifier and deletion time remain to block old sessions. Signing out alone keeps server copies.</td></tr>
+      <tr><td>Previous CueGO cloud<br>(download or delete previously connected account data)</td><td>Email address, selected show configuration, notes, crew cues and music files</td><td>Email verification and private transfer between devices using the same email</td><td>Delete your cloud account in the app to remove server copies. Remnants of in-flight transfers are cleaned up within one hour. Only a hashed email identifier and deletion time remain to block old sessions. Signing out alone keeps server copies.</td></tr>
       <tr><td>Remote and crew screen<br>(only when internet linking is on)</td><td>Remote commands (GO etc.), show and track names, cue notes, crew cues, playback position</td><td>Relay between devices that are apart</td><td>Passes through the relay; not stored</td></tr>
     </table></div>
-    <p>The cloud uses private Cloudflare R2 storage (APAC location hint), with Vercel and an email delivery service for sign-in. Fully downloaded music plays from local files without internet.
+    <p>Personal storage files are handled by the provider you select, such as Apple or Google, under its privacy policy, account storage limits and pricing. CueGO does not receive your provider password. Imported shows and music are copied into the app for offline playback. Previous CueGO cloud files remain in private Cloudflare R2 storage and can be downloaded or removed through cloud account deletion in the app. New show saves use personal storage.
     </p><p>Remote control on the same Wi-Fi and the Apple Watch connect device to device without our servers.</p>
     <p>We never receive card or payment details. App-store purchases are handled by Apple or Google.</p>
 
