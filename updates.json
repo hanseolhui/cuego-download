@@ -1,11 +1,11 @@
 {
   "macos": {
-    "version": "1.3.2",
-    "build": "20261101.2"
+    "version": "1.3.3",
+    "build": "20261102.1"
   },
   "windows": {
-    "version": "1.3.2",
-    "build": "26110102"
+    "version": "1.3.3",
+    "build": "26110201"
   },
   "ios": {
     "version": "1.3.0"
