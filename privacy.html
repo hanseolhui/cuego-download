@@ -66,6 +66,10 @@
     </p><p>같은 Wi-Fi 안의 리모컨 연결과 애플워치 연결은 서버를 거치지 않고 기기끼리 직접 이어집니다.</p>
     <p>카드 번호 등 결제 정보는 받지 않습니다. 앱 마켓에서 구매한 경우 결제는 Apple·Google이 처리합니다.</p>
 
+    <h2>선택적 익명 공연 진행·오류 기록 (1.3.6부터)</h2>
+    <p>설정의 ‘공연 진행·오류 기록 공유’는 설치 통계와 별도로 기본 꺼짐입니다. 켠 뒤 새로 시작한 공연만 대상으로, 계정·이용권·설치 통계와 별개인 무작위 기기 지원 번호와 공연별 무작위 번호, 앱 버전·운영체제 종류, 시작·마지막 기록 시각, 준비·진행·일시정지·종료 상태, 큐 수와 번호, GO·누름·오류 횟수 및 마지막 오류 종류, 리허설 여부를 서리아트 지원 서버로 전송합니다. 공연명·음원·파일명·멘트·메모·이메일·이용권·상세 오류 문자열은 전송하지 않습니다.</p>
+    <p>목적은 이용자가 동의한 공연 진행 상태와 오류 지원 기록 확인입니다. 진행 중 약 30초 간격으로 기록하며 오프라인에서는 기기에 공연별 최신 상태를 최대 200건·90일 보관한 뒤 연결 후 전송합니다. 끄면 미전송 기록을 지우고 추가 전송을 중단합니다. 이미 전송한 서버 기록은 90일 보관 후 정기 삭제하며, 즉시 삭제 요청은 앱에서 복사한 ‘공연 기록 문의 번호’와 함께 help@seoriarts.com으로 보낼 수 있습니다. 양쪽 서리아트 관리자 화면은 같은 비공개 원장을 조회하며 계정·결제와 연결하지 않습니다. 네트워크가 끊겨 최근 신호가 없다는 것만으로 앱 오류나 공연 종료를 판단하지 않습니다.</p>
+
     <h2>선택적 설치·사용 통계 (1.3.4부터)</h2>
     <p>설정의 ‘익명 설치·사용 통계 참여’는 기본 꺼짐입니다. 직접 켠 경우에만 이용권 번호와 별개인 임의 통계 번호, 앱 버전, 운영체제 종류, 설정 언어를 하루 최대 한 번 서리아트 서버로 전송합니다. 서버는 최초·최근 수신 시각을 기록합니다. 음악·공연 이름·메모·이메일·이용권 코드·광고 식별자는 이 통계에 포함하지 않습니다.</p>
     <p>목적은 통계 참여 기기의 첫 실행과 버전별 이용 현황 집계입니다. 기기별 번호라 사람 수 또는 모든 설치 수와 같지 않습니다. 설정에서 끄면 이후 전송을 중단합니다. 통계 운영 기간에 보관하며, 삭제 문의에는 기기의 통계 번호가 필요할 수 있습니다. 서비스 제공자의 네트워크 보안 로그는 별도 정책에 따릅니다.</p>
@@ -121,6 +125,10 @@
     <p>Personal storage files are handled by the provider you select, such as Apple or Google, under its privacy policy, account storage limits and pricing. CueGO does not receive your provider password. Imported shows and music are copied into the app for offline playback. Previous CueGO cloud files remain in private Cloudflare R2 storage and can be downloaded or removed through cloud account deletion in the app. New show saves use personal storage.
     </p><p>Remote control on the same Wi-Fi and the Apple Watch connect device to device without our servers.</p>
     <p>We never receive card or payment details. App-store purchases are handled by Apple or Google.</p>
+
+    <h2>Optional anonymous performance support records (from 1.3.6)</h2>
+    <p>Performance progress and error sharing is a separate setting, off by default. It applies only to shows opened after enabling it. CueGO sends a random support device ID separate from account, license and install statistics, a random run ID, app version and OS type, start/latest observation times, ready/playing/paused/end status, cue count/index, GO/press/error counts, last categorical error and rehearsal flag to SeoriArts support servers. No show names, music, filenames, notes, cue text, email, license or raw exception text is sent.</p>
+    <p>These voluntary records help support performance progress and errors. Progress is recorded about every 30 seconds. Offline snapshots are coalesced per show and stored locally for up to 200 runs/90 days before upload after reconnection. Disabling clears unsent records and stops additional transmission. Uploaded records are retained for 90 days and periodically deleted. For earlier deletion, contact help@seoriarts.com with the performance support ID copied in Settings. Both SeoriArts admin sites read the same private records without linking accounts or payments. Missing recent signals do not imply a crash or show ending.</p>
 
     <h2>Optional installation and usage statistics (from 1.3.4)</h2>
     <p>Sharing anonymous installation and usage counts is off by default. Only if you enable it, CueGO sends a random statistics ID separate from your license, app version, operating system type and selected language to SeoriArts at most once a day. The server records first and latest receipt times. This payload contains no music, show names, notes, email, license codes or advertising identifiers.</p>
