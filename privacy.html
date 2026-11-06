@@ -44,11 +44,11 @@
   <!-- ─────────────── 한국어 ─────────────── -->
   <section data-l="ko">
     <h1>큐GO 개인정보처리방침</h1>
-    <p class="meta">시행일 2026년 11월 3일</p>
+    <p class="meta">시행일 2026년 11월 6일</p>
     <p class="meta who">운영 SeoriArts · 문의 <a href="mailto:help@seoriarts.com">help@seoriarts.com</a></p>
 
     <div class="lead">
-      공연 편집과 재생에는 <b>로그인이 필요 없습니다.</b> 이름·전화번호·위치·연락처·사진·광고 식별자를 수집하지 않습니다.
+      <b>1.3.12의 회원 가입 기능에서는 최초 가입이 필요합니다.</b> 이름(활동명)과 인증한 이메일을 계정 관리에 사용합니다. 가입 후 기기에 받은 공연은 인터넷이나 로그인 갱신 없이 실행할 수 있습니다. 1.3.11 이전 버전의 공연 편집·재생은 기존 방식으로 동작합니다. 전화번호·위치·연락처·사진·광고 식별자는 수집하지 않습니다.
       음원과 공연 구성은 기기에 저장됩니다. <b>개인 저장소(1.1.4부터)</b>에서 iCloud Drive·Google Drive 등 본인이 고른 저장소에 공연 파일을 저장하거나 불러올 수 있습니다. 이 경로는 큐GO 음악 보관 서버를 사용하지 않습니다.
     </div>
 
@@ -65,6 +65,13 @@
     <p>개인 저장소 파일은 사용자가 선택한 Apple·Google 등 저장소 제공업체가 처리하며, 해당 업체의 개인정보처리방침과 계정 용량·요금이 적용됩니다. 큐GO는 그 계정의 비밀번호를 받지 않습니다. 앱으로 불러온 공연과 음악은 기기에 복사해 인터넷 없이 재생합니다. 기존 큐GO 보관함의 이전 자료는 Cloudflare R2 비공개 저장소에 있으며, 앱에서 자료 받기와 계정 삭제가 가능합니다. 새 공연 저장은 개인 저장소를 사용합니다.
     </p><p>같은 Wi-Fi 안의 리모컨 연결과 애플워치 연결은 서버를 거치지 않고 기기끼리 직접 이어집니다.</p>
     <p>카드 번호 등 결제 정보는 받지 않습니다. 앱 마켓에서 구매한 경우 결제는 Apple·Google이 처리합니다.</p>
+
+    <h2>회원 가입과 선택적 계정별 품질 기록 (1.3.12)</h2>
+    <p>이메일 또는 Google·Apple을 통한 서리아트 공통 로그인으로 큐GO에 가입할 수 있습니다. 필수 회원 정보는 회원 번호, 이름(활동명), 인증 이메일, 가입 안내 버전과 동의 시각입니다. 비밀번호를 큐GO 서버나 앱에 입력·전송하지 않으며 로그인 세션은 기기 보안 저장소에 보관합니다. 외부 로그인 제공자가 인증 정보를 처리합니다. Apple의 비공개 이메일도 사용할 수 있습니다.</p>
+    <p>‘공연 품질 개선에 참여’는 선택이며 기본 꺼짐입니다. 켠 이후 새로 기록되는 공연에 한해 계정 회원 번호, 새 기기 기록 번호, 기종·운영체제·앱 버전, 공연별 임의 번호, 진행·일시정지·종료 상태와 시각, 큐 수·현재 번호, GO·누름·오류 횟수, 오류 범주와 리허설 여부를 기록합니다. 음악·곡명·공연명·파일 경로·멘트·스태프 연락처·상세 오류 문자열·하드웨어 일련번호는 보내지 않습니다. 기존 익명 통계를 새 계정에 소급 연결하지 않습니다.</p>
+    <p>목적은 가입 계정 관리와 동의한 이용자의 공연 안정성·기종별 오류 지원입니다. 품질 기록은 양쪽 서리아트 관리자 화면의 같은 원장에서 권한 있는 운영자만 조회합니다. 상세 기록은 최대 90일, 완료 공연 누적 횟수와 회원 프로필은 동의 철회 또는 큐GO 탈퇴까지 보관합니다. 오프라인 대기열은 공연별 최신 상태 최대 200건·90일입니다. 진단 동의를 끄면 기기 수집·대기열을 즉시 중지·삭제하며 서버 기록과 누적 횟수도 삭제합니다. 연결이 없으면 서버 삭제는 연결 복구 후 재시도합니다.</p>
+    <p>앱 설정 → 내 계정에서 이름 수정, 품질 기록 동의 철회, 로그아웃, 큐GO 탈퇴를 할 수 있습니다. 앱이 없어도 <a href="https://apps.seoriarts.com/cuego-account-delete.html">큐GO 계정 삭제 페이지</a>에서 가입 이메일을 인증하고 삭제할 수 있습니다. 큐GO 탈퇴는 큐GO 프로필과 연결 통계를 삭제합니다. Google·Apple 계정과 다른 서리아트 서비스의 공통 로그인 정보, 기기에 저장한 공연·음원, 구매 이용권은 삭제하지 않습니다. 구독은 구매한 스토어에서 별도로 해지할 수 있습니다.</p>
+    <p>인증·회원 DB는 Supabase(서리아트 프로젝트, 일본 도쿄 리전), 앱 API는 Vercel, 삭제 인증 메일은 Resend를 사용합니다. 각 제공업체는 이 기능 운영을 위한 처리 범위에서 정보를 처리하며, Google·Apple 로그인에는 해당 제공업체의 정책도 적용됩니다. 공연 재생 중 인증 만료·인터넷 단절·통계 전송 실패가 재생을 중단시키지 않도록 인증과 로컬 공연을 분리합니다.</p>
 
     <h2>선택적 익명 공연 진행·오류 기록 (1.3.6부터)</h2>
     <p>설정의 ‘공연 진행·오류 기록 공유’는 설치 통계와 별도로 기본 꺼짐입니다. 켠 뒤 새로 시작한 공연만 대상으로, 계정·이용권·설치 통계와 별개인 무작위 기기 지원 번호와 공연별 무작위 번호, 앱 버전·운영체제 종류, 시작·마지막 기록 시각, 준비·진행·일시정지·종료 상태, 큐 수와 번호, GO·누름·오류 횟수 및 마지막 오류 종류, 리허설 여부를 서리아트 지원 서버로 전송합니다. 공연명·음원·파일명·멘트·메모·이메일·이용권·상세 오류 문자열은 전송하지 않습니다.</p>
@@ -104,11 +111,11 @@
   <!-- ─────────────── English ─────────────── -->
   <section data-l="en">
     <h1>CueGO Privacy Policy</h1>
-    <p class="meta">Effective November 3, 2026</p>
+    <p class="meta">Effective November 6, 2026</p>
     <p class="meta who">Operated by SeoriArts · Contact <a href="mailto:help@seoriarts.com">help@seoriarts.com</a></p>
 
     <div class="lead">
-      <b>No login is needed to edit or play shows.</b> We don't collect your name, phone number, location, contacts, photos or advertising ID.
+      <b>The membership feature in 1.3.12 requires initial registration.</b> We use your name (stage name) and verified email to manage your account. After joining, downloaded shows work offline without sign-in renewal. Versions through 1.3.11 keep their existing behavior. We do not collect phone numbers, location, contacts, photos or advertising IDs.
       Music and shows stay on your device. With <b>personal storage (from 1.1.4)</b>, you can save and open show files using a provider you choose, such as iCloud Drive or Google Drive. This route does not use CueGO music storage servers.
     </div>
 
@@ -125,6 +132,13 @@
     <p>Personal storage files are handled by the provider you select, such as Apple or Google, under its privacy policy, account storage limits and pricing. CueGO does not receive your provider password. Imported shows and music are copied into the app for offline playback. Previous CueGO cloud files remain in private Cloudflare R2 storage and can be downloaded or removed through cloud account deletion in the app. New show saves use personal storage.
     </p><p>Remote control on the same Wi-Fi and the Apple Watch connect device to device without our servers.</p>
     <p>We never receive card or payment details. App-store purchases are handled by Apple or Google.</p>
+
+    <h2>Membership and optional account-linked reliability records (1.3.12)</h2>
+    <p>Join CueGO using SeoriArts shared sign-in with email, Google or Apple. Required profile data consists of a member ID, name/stage name, verified email, notice version and acceptance time. CueGO does not receive provider passwords. Sessions are kept in device secure storage. Apple private relay emails are supported.</p>
+    <p>Account-linked reliability sharing is optional and off by default. After enabling it, we record a new member device ID, model, OS and app version, random run ID, progress/pause/end states and times, cue counts/index, GO/press/error counts, categorical error and rehearsal flag. No music, titles, file paths, notes, staff contacts, raw exceptions or hardware serial numbers are sent. Historical anonymous records are not linked retroactively.</p>
+    <p>Authorized SeoriArts administrators use the common operational ledger for account management and consented reliability support. Detailed records are retained for up to 90 days; completed-show totals and profile data remain until withdrawal or CueGO account deletion. Offline queues hold the latest snapshot of up to 200 shows for up to 90 days. Turning sharing off stops local collection and erases the queue immediately; server records and totals are deleted on connection, with offline deletion requests retried later.</p>
+    <p>Use Settings → My account to edit your name, withdraw diagnostics consent, sign out or delete your CueGO membership. Without the app, verify your email on the <a href="https://apps.seoriarts.com/cuego-account-delete.html">CueGO account deletion page</a>. Deletion removes the CueGO profile and linked statistics; it does not delete Google/Apple accounts, shared sign-in information for other SeoriArts services, local shows/audio or purchased passes. Manage subscription cancellation in the store used to purchase it.</p>
+    <p>Authentication and member storage use Supabase's SeoriArts Tokyo-region project, APIs use Vercel, and deletion-verification email uses Resend, for the purposes described here. Provider sign-in also follows Google's or Apple's policy. Local performance access is separated from sign-in and statistics so expiry or connection loss does not interrupt an active show.</p>
 
     <h2>Optional anonymous performance support records (from 1.3.6)</h2>
     <p>Performance progress and error sharing is a separate setting, off by default. It applies only to shows opened after enabling it. CueGO sends a random support device ID separate from account, license and install statistics, a random run ID, app version and OS type, start/latest observation times, ready/playing/paused/end status, cue count/index, GO/press/error counts, last categorical error and rehearsal flag to SeoriArts support servers. No show names, music, filenames, notes, cue text, email, license or raw exception text is sent.</p>
