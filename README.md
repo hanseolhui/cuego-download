@@ -1,6 +1,3 @@
-> 가입 포함 업데이트 준비 중: 1.3.11 신규 배포 보류. 아래 파일은 기존 공개 1.3.9입니다. 기존 설치와 데이터는 영향을 받지 않습니다.
-> Registration update in preparation: 1.3.11 distribution is on hold. Downloads below are the previously released 1.3.9; existing installations and data are unaffected.
-
 # 큐GO · CueGO — 맥 · 윈도우 받기
 
 공연 음악을 큐 순서대로, GO 하나로. 마술사·공연자를 위한 음악 큐 앱입니다.
@@ -9,8 +6,8 @@
 
 | | 받기 |
 |---|---|
-| 🍎 맥 (macOS 12 이상, 애플 공증) | [CueGO-mac.dmg](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-mac.dmg) |
-| 🪟 윈도우 10·11 (64비트) | [설치 파일](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-windows.zip) |
+| 🍎 맥 (macOS 12 이상, 애플 공증) | [CueGO-mac.dmg](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.dmg) |
+| 🪟 윈도우 10·11 (64비트) | [설치 파일](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 아이폰 · 아이패드 · 안드로이드는 앱스토어 · 플레이스토어에서 받으세요.
 
@@ -35,11 +32,11 @@
 
 | | Download |
 |---|---|
-| 🍎 Mac (macOS 12+, notarized) | [CueGO-mac.dmg](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-mac.dmg) |
-| 🪟 Windows 10/11 (64-bit) | [Installer](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-windows.zip) |
+| 🍎 Mac (macOS 12+, notarized) | [CueGO-mac.dmg](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-mac.dmg) |
+| 🪟 Windows 10/11 (64-bit) | [Installer](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 iPhone, iPad and Android: get CueGO from the App Store / Google Play.
 From 1.1.3, activate a 7-day full-feature trial with no automatic charge. A Lifetime Pass is required to start a new performance after the trial. Shows, tracks and editing remain available. Existing free users receive a 14-day transition period when updating. Enter your Lifetime Pass code (`CUE-…`) in Settings → Pass. Up to 5 registered devices; Apple Watch uses the paired iPhone’s slot.
 
 등록 기기 관리: https://apps.seoriarts.com/cuego-devices
-Android 직접 설치: https://github.com/hanseolhui/cuego-download/releases/download/v1.3.9/CueGO-android.apk
+Android 직접 설치: https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-android.apk
