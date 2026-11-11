@@ -1,17 +1,17 @@
 {
   "macos": {
-    "version": "1.3.16",
-    "build": "20261109.3"
+    "version": "1.3.18",
+    "build": "20261111.2"
   },
   "windows": {
-    "version": "1.3.16",
-    "build": "79"
+    "version": "1.3.18",
+    "build": "82"
   },
   "ios": {
-    "version": "1.3.13"
+    "version": "1.3.16"
   },
   "android": {
-    "version": "1.3.14",
-    "build": "77"
+    "version": "1.3.17",
+    "build": "80"
   }
 }

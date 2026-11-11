@@ -21,8 +21,11 @@
 
 ## 이용권
 
-1.1.3부터 직접 시작하는 7일 전체 기능 무료 체험입니다. 이후 새 공연 시작은 평생 이용권이 필요합니다. 곡·설정·멘트는 보존하며 편집·내보내기할 수 있습니다. 기존 무료 사용자는 업데이트 시 14일 전환 유예를 받습니다.
-평생 이용권 코드(`CUE-…`)는 설정 → 이용권에 넣으세요 (기기 5대까지).
+가입 후 기본 로컬 공연 준비·실행과 같은 Wi-Fi 리모컨 1대 연결은 무료입니다. 내려받은 공연·음원은 인터넷 없이 재생할 수 있습니다.
+인터넷 리모컨·인터넷 스태프 화면에는 유료 이용권이 필요합니다. 월 4,900원 · 연 39,000원 · 평생 89,000원이며, 실제 결제 금액과 이용 조건은 구매 화면에서 확인하세요.
+iPhone·Android 앱에서 구매하고 같은 구매 이메일로 맥·윈도우 이용권을 연결할 수 있습니다. 등록 기기 최대 5대이며, Apple Watch는 연결된 iPhone의 등록을 사용합니다. 이용 기간이 끝나도 이미 시작한 공연을 중단하지 않습니다.
+
+1.3.18은 들으며 볼륨 만들기, 음원 교체 전 타이밍 확인, 기기 내 공연본 보관·새 공연으로 복원, 음향 담당자용 ZIP 내보내기를 제공합니다. ZIP의 음원은 원본이며 볼륨 변화·페이드·반복은 진행표에 따라 직접 조작해야 합니다.
 
 문의: help@seoriarts.com · © SeoriArts
 
@@ -36,7 +39,11 @@
 | 🪟 Windows 10/11 (64-bit) | [Installer](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows-setup.exe) · [zip](https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-windows.zip) |
 
 iPhone, iPad and Android: get CueGO from the App Store / Google Play.
-From 1.1.3, activate a 7-day full-feature trial with no automatic charge. A Lifetime Pass is required to start a new performance after the trial. Shows, tracks and editing remain available. Existing free users receive a 14-day transition period when updating. Enter your Lifetime Pass code (`CUE-…`) in Settings → Pass. Up to 5 registered devices; Apple Watch uses the paired iPhone’s slot.
+Basic local show preparation/playback and one remote on the same Wi-Fi are free after signup. Downloaded shows and audio can play offline. Internet remotes and internet crew screens require an active Pass. Purchase in the iPhone or Android app and link desktop access with the purchase email. Up to five registered devices; Apple Watch uses its paired iPhone’s slot. Expiry does not interrupt a performance already underway.
+
+Version 1.3.18 adds volume automation created as you listen, replacement-audio timing review, local saved show versions restored as a new show, and sound-operator ZIP export. Exported audio remains original; the operator follows the running order to control fades, volume and loops manually.
 
 등록 기기 관리: https://apps.seoriarts.com/cuego-devices
 Android 직접 설치: https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-android.apk
+
+Google Play 설치본은 Play 스토어에서 업데이트하세요. 직접 APK는 Play 설치본과 서명이 달라 덮어설치할 수 없습니다. / Update Google Play installations through Google Play. Direct APKs use a different signing key and cannot update Play installations.
