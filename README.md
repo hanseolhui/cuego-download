@@ -25,7 +25,7 @@
 인터넷 리모컨·인터넷 스태프 화면에는 유료 이용권이 필요합니다. 월 4,900원 · 연 39,000원 · 평생 89,000원이며, 실제 결제 금액과 이용 조건은 구매 화면에서 확인하세요.
 iPhone·Android 앱에서 구매하고 같은 구매 이메일로 맥·윈도우 이용권을 연결할 수 있습니다. 등록 기기 최대 5대이며, Apple Watch는 연결된 iPhone의 등록을 사용합니다. 이용 기간이 끝나도 이미 시작한 공연을 중단하지 않습니다.
 
-1.3.22는 큐 카드를 한 줄로 접고, 연결 설정과 클리커 버튼 설정을 한 화면씩으로 모으고, 공연 전 점검에서 바로 공연을 시작하게 했습니다. 화면의 GO를 연달아 눌러도 한 번만 받습니다. 음향 담당자용 ZIP의 음원은 원본이며 볼륨 변화·페이드·반복은 진행표에 따라 직접 조작해야 합니다.
+1.3.23은 아이콘과 화면이 새 디자인으로 바뀌었습니다. 소리 줄이기 단추에 지금 볼륨이 보이고, 감독 링크를 보낼 때 안내 글이 함께 복사되며, 긴 곡 이름이 한 줄에 다 보입니다. 음향 담당자용 ZIP의 음원은 원본이며 볼륨 변화·페이드·반복은 진행표에 따라 직접 조작해야 합니다.
 
 문의: help@seoriarts.com · © SeoriArts
 
@@ -41,7 +41,7 @@ iPhone·Android 앱에서 구매하고 같은 구매 이메일로 맥·윈도우
 iPhone, iPad and Android: get CueGO from the App Store / Google Play.
 Basic local show preparation/playback and one remote on the same Wi-Fi are free after signup. Downloaded shows and audio can play offline. Internet remotes and internet crew screens require an active Pass. Purchase in the iPhone or Android app and link desktop access with the purchase email. Up to five registered devices; Apple Watch uses its paired iPhone’s slot. Expiry does not interrupt a performance already underway.
 
-Version 1.3.22 folds cue cards to one line, gathers connection settings and clicker buttons onto one screen each, and lets the pre-show check lead straight to Start show. A double tap on the on-screen GO counts once. Audio in the sound-operator ZIP export remains original; the operator follows the running order to control fades, volume and loops manually.
+Version 1.3.23 brings a new icon and a redesigned look. The volume dip button shows the current level, sharing the crew link copies a short note with it, and long track names fit on one line. Audio in the sound-operator ZIP export remains original; the operator follows the running order to control fades, volume and loops manually.
 
 등록 기기 관리: https://apps.seoriarts.com/cuego-devices
 Android 직접 설치: https://github.com/hanseolhui/cuego-download/releases/latest/download/CueGO-android.apk
