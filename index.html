@@ -5,30 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>큐GO 받기 · CueGO Download</title>
 <meta name="description" content="큐GO — 공연 음악을 큐 순서대로, GO 하나로. 맥 · 윈도우 받기">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
-  :root { --bg:#0b0f0d; --card:#141a17; --line:#24302a; --ink:#f3f5f4; --dim:#9aa59f; --go:#2bff88; }
+  :root { --bg:#0a0a0b; --card:#141415; --line:#3a3a3d; --ink:#f3f1ea; --dim:#a9a69e; --go:#2bff88; --tape-ink:#111; }
   * { box-sizing: border-box; }
-  body { margin:0; min-height:100vh; background: radial-gradient(1200px 600px at 50% -10%, #12402a 0%, var(--bg) 60%); color:var(--ink);
+  body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
          font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif;
          display:flex; align-items:center; justify-content:center; padding:24px 16px; }
   main { width:100%; max-width:520px; text-align:center; }
-  .logo { width:72px; height:72px; border-radius:20px; background:var(--go); display:inline-flex; align-items:center; justify-content:center;
-          font-weight:900; font-size:34px; color:#07140d; margin-bottom:18px; }
-  h1 { font-size:34px; margin:0 0 8px; letter-spacing:-1px; }
+  .logo { width:72px; height:72px; border-radius:16px; display:inline-block; margin-bottom:18px; }
+  h1 { font-size:34px; font-weight:800; margin:0 0 8px; letter-spacing:-1px; }
   p.lead { color:var(--dim); margin:0 0 28px; line-height:1.5; }
-  .main-btn { display:block; background:#f4f6f5; color:#07140d; text-decoration:none; font-weight:800; font-size:19px;
-              padding:18px 20px; border-radius:999px; margin-bottom:10px; }
+  .main-btn { display:block; background:var(--ink); color:#0a0a0b; text-decoration:none; font-weight:800; font-size:19px;
+              padding:18px 20px; border-radius:8px; margin-bottom:10px; }
   .sub { color:var(--dim); font-size:13px; margin-bottom:26px; }
-  .other { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:28px; }
-  .other a { color:var(--go); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:10px 16px; font-weight:700; font-size:14px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:18px 20px; text-align:left; font-size:14px; line-height:1.6; color:var(--dim); }
+  .other { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:34px; }
+  .other a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:10px 14px; font-weight:700; font-size:14px; }
+  .card { position:relative; background:var(--card); border:1px solid #2a2a2c; border-radius:8px; padding:24px 20px 18px; text-align:left; font-size:14px; line-height:1.6; color:var(--dim); }
   .card b { color:var(--ink); }
-  footer { color:#5d6862; font-size:12px; margin-top:22px; }
+  .card a { color:var(--go); }
+  .tape { position:absolute; left:14px; top:-12px; background:var(--go); color:var(--tape-ink); font-weight:800; font-size:12px; line-height:1;
+          padding:6px 12px 6px 11px; transform:rotate(-1.4deg);
+          clip-path:polygon(2px 0, 100% 0, calc(100% - 3px) 32%, 100% 58%, calc(100% - 2px) 100%, 0 100%, 3px 62%, 0 30%); }
+  footer { color:#6d6a64; font-size:12px; margin-top:22px; }
 </style>
 </head>
 <body>
 <main>
-  <div class="logo">Q</div>
+  <img class="logo" src="icon-192.png" alt="큐GO" width="72" height="72">
   <h1 id="title">큐GO 받기</h1>
   <p class="lead" id="lead">공연 음악을 큐 순서대로, GO 하나로.</p>
 
@@ -37,7 +42,7 @@
 
   <div class="other" id="other"></div>
 
-  <div class="card" id="how"></div>
+  <div class="card"><span class="tape" id="tape">설치</span><div id="how"></div></div>
   <footer><a href="support.html" style="color:inherit">고객 지원 · Support</a> · <a href="privacy.html" style="color:inherit">개인정보처리방침 · Privacy</a><br>help@seoriarts.com · © SeoriArts</footer>
 </main>
 <script>
@@ -73,6 +78,7 @@
     ios: t('<b>아이폰 · 아이패드</b> — 앱스토어에서 «큐GO»를 받으세요.', '<b>iPhone · iPad</b> — Get “CueGO” on the App Store.'),
     and: t('<b>안드로이드</b> — 플레이스토어에서 «큐GO»를 받으세요.', '<b>Android</b> — Get “CueGO” on Google Play.'),
   };
+  document.getElementById('tape').textContent = t('설치', 'INSTALL');
   document.getElementById('how').innerHTML = how[first] + '<br><br>' +
     t('직접 다운로드 1.3.23 · 맥 · 윈도우 · 안드로이드 APK. 아이콘과 화면이 새 디자인으로 바뀌었고, 소리 줄이기 단추에 지금 볼륨이 보이며, 긴 곡 이름이 한 줄에 다 보입니다. App Store와 Google Play의 공개 버전은 각 스토어에서 확인하세요.',
       'Direct downloads 1.3.23 for Mac, Windows and Android APK. A new icon and a redesigned look, a volume dip button that shows the current level, and long track names that fit on one line. Check each store for its public version.') + '<br><br>' +
