@@ -6,40 +6,42 @@
 <title>큐GO 고객 지원 · CueGO Support</title>
 <meta name="description" content="큐GO(CueGO) 고객 지원 · 자주 묻는 질문">
 <!-- 🔴 문의 주소는 .who 줄에만 있다 — 스토어 주소를 이 페이지로 바꾸기 «전에» 대표 확인. -->
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
-  :root { --bg:#0b0f0d; --card:#141a17; --line:#24302a; --ink:#f3f5f4; --dim:#9aa59f; --go:#2bff88; }
+  :root { --bg:#0a0a0b; --card:#141415; --line:#3a3a3d; --ink:#f3f1ea; --dim:#a9a69e; --go:#2bff88; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--ink); line-height:1.7;
          font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif; padding:28px 16px 48px; }
   main { max-width:760px; margin:0 auto; }
   header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
-  .logo { width:40px; height:40px; border-radius:12px; background:var(--go); display:inline-flex; align-items:center; justify-content:center;
-          font-weight:900; font-size:20px; color:#07140d; text-decoration:none; flex:none; }
+  .logo { display:inline-flex; flex:none; }
+  .logo img { width:40px; height:40px; border-radius:9px; display:block; }
   .langs { margin-left:auto; display:flex; gap:6px; }
-  .langs button { background:none; border:1px solid var(--line); color:var(--dim); border-radius:999px; padding:4px 12px; font-weight:700; cursor:pointer; }
-  .langs button.on { color:var(--go); border-color:var(--go); }
+  .langs button { background:none; border:1px solid var(--line); color:var(--dim); border-radius:6px; padding:4px 12px; font-weight:700; cursor:pointer; }
+  .langs button.on { color:var(--ink); border-color:var(--ink); }
   h1 { font-size:28px; margin:18px 0 4px; letter-spacing:-.5px; }
   h2 { font-size:19px; margin:30px 0 8px; }
-  p, li { color:#d6dcd8; }
+  p, li { color:#d9d6cf; }
   .meta { color:var(--dim); font-size:14px; }
-  .lead { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px 18px; margin:18px 0; }
+  .lead { background:var(--card); border:1px solid #2a2a2c; border-radius:8px; padding:16px 18px; margin:18px 0; }
   .lead b { color:var(--go); }
   table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0; }
   th, td { border:1px solid var(--line); padding:9px 10px; text-align:left; vertical-align:top; }
   th { background:var(--card); color:var(--ink); }
-  td { color:#d6dcd8; }
+  td { color:#d9d6cf; }
   .scroll { overflow-x:auto; }
   a { color:var(--go); }
-  .mail { display:inline-block; background:#f4f6f5; color:#07140d; font-weight:800; text-decoration:none; border-radius:999px; padding:12px 20px; margin:6px 0 4px; }
+  .mail { display:inline-block; background:var(--ink); color:#0a0a0b; font-weight:800; text-decoration:none; border-radius:8px; padding:12px 20px; margin:6px 0 4px; }
   h3 { font-size:16px; margin:22px 0 4px; color:var(--ink); }
-  footer { color:#5d6862; font-size:12px; margin-top:36px; }
+  footer { color:#6d6a64; font-size:12px; margin-top:36px; }
   html.ko [data-l="en"], html.en [data-l="ko"] { display:none; }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <a class="logo" href="./">Q</a>
+    <a class="logo" href="./"><img src="icon-192.png" alt="큐GO" width="40" height="40"></a>
     <div class="langs"><button id="b-ko" onclick="setLang('ko')">한국어</button><button id="b-en" onclick="setLang('en')">English</button></div>
   </header>
 
